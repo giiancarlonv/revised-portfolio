@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../static/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: url("../static/Quicksand-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url("../static/Quicksand-Medium.ttf");
+}
+body {
+  background: #e8e8e8;
+  font-family: "Quicksand";
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+header .header-design {
+  width: 80%;
+  height: 1rem;
+  background: linear-gradient(-90deg, #316fa9 0%, #828fcf 100%);
+  margin-bottom: 1rem;
+}
+header .header-text {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+header .header-text a {
+  text-decoration: none;
+  color: #7b7b7b;
+  letter-spacing: 0.2rem;
+}
+
+main {
+  margin: 1rem 0;
+}
+main .hero-image {
+  margin: 0 2rem;
+  background: #000c1f;
+  background: linear-gradient(-90deg, #316fa9 0%, #828fcf 100%);
+}
+main .hero-image img {
+  width: 100%;
+}
+main .section1 {
+  margin: 0 2rem;
+  display: grid;
+}
+main .section1 ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+main .section1 ul li {
+  list-style: none;
+  margin-left: 8%;
+}
+main .section1 ul li img {
+  width: 15%;
+  padding-right: 0.2rem;
+}
+main .section1 ul li a {
+  color: #000c1f;
+  text-decoration: none;
+}
+main .section1 .name {
+  text-align: center;
+  padding: 1rem 2rem 3rem;
+  background: #316fa9;
+  background: linear-gradient(-90deg, #316fa9 0%, #828fcf 100%);
+  color: #eaeaea;
+}
+main .section1 .name h2 {
+  font-family: "Quicksand-Medium";
+}
+main .section1 .name span {
+  text-transform: capitalize;
+}
+main .section2 {
+  margin: 2rem 2rem;
+  text-align: center;
+}
+main .section2 span {
+  background: #316fa9;
+  background: linear-gradient(180deg, #316fa9 0%, #828fcf 100%);
+  padding: 3rem 0.5rem 0.5rem;
+  color: #eaeaea;
+}
+main .section2 aside {
+  margin: 1rem 0;
+}
+main .projects-container {
+  margin: 2rem 0;
+}
+main .projects-container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .projects-container .text h1 span {
+  z-index: -1;
+  background: #828fcf;
+  text-transform: capitalize;
+  color: #eaeaea;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  background: linear-gradient(-90deg, #316fa9 0%, #828fcf 100%);
+}
+main .projects-container .project-image {
+  margin: 1rem 2rem;
+}
+main .projects-container .project-image img {
+  width: 100%;
+}
+main .projects-container .project-image h4, main .projects-container .project-image p {
+  margin: 0.5rem 0;
+  color: #000c1f;
+}
+main .projects-container .project-image .links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .projects-container .project-image .links a {
+  text-decoration: none;
+  color: #000c1f;
+}
+main .tech-container {
+  margin: 3rem 2rem;
+  text-align: center;
+}
+main .tech-container h1 {
+  color: #000c1f;
+  font-size: 1em;
+}
+main .tech-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+main .tech-container ul li {
+  list-style: none;
+}
+main .tech-container ul li img {
+  width: 60%;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem;
+}
+
+@media (min-width: 1280px) {
+  header {
+    align-items: flex-start;
+    margin: 0 10rem;
+  }
+  header .header-design {
+    height: 2rem;
+    width: 100%;
+  }
+  header .header-text {
+    align-items: flex-start;
+  }
+  header .header-text h1 {
+    font-size: 3em;
+  }
+  main .hero-image {
+    margin: 0 10rem;
+  }
+  main .section1 {
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+  }
+  main .section1 .name {
+    text-align: left;
+    padding-left: 10rem;
+    height: 7rem;
+  }
+  main .section1 .name h2 {
+    font-size: 2.5em;
+  }
+  main .section1 .name span {
+    font-size: 1.3em;
+  }
+  main .section1 ul {
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 5rem;
+  }
+  main .section1 ul li {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+  }
+  main .section1 ul li img {
+    padding-right: 1rem;
+    width: 10%;
+  }
+  main .section2 {
+    margin: 3rem 10rem;
+    text-align: left;
+    width: 55%;
+  }
+  main .section2 span {
+    padding: 1rem 0.5rem 5rem 0.5rem;
+    color: #eaeaea;
+  }
+  main .section2 h1 {
+    font-size: 3em;
+  }
+  main .section2 strong {
+    font-size: 2em;
+  }
+  main .section2 p {
+    font-size: 1em;
+  }
+  main .projects-container {
+    margin: 5rem 0;
+  }
+  main .projects-container .text h1 {
+    font-size: 3em;
+  }
+  main .projects-container .text h1 span {
+    padding: 1rem 1rem 1rem 10rem;
+  }
+  main .projects-container .project-image {
+    margin: 2rem 10rem;
+  }
+  main .projects-container .project-image h4 {
+    font-size: 2em;
+  }
+  main .projects-container .project-image p {
+    font-size: 1.5em;
+  }
+  main .projects-container .project-image .links {
+    width: 20%;
+  }
+  main .projects-container .project-image .links a {
+    font-size: 1.5em;
+  }
+  main .tech-container {
+    margin: 5rem 0 5rem 10rem;
+    text-align: unset;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.5fr 1fr;
+  }
+  main .tech-container h1 {
+    font-size: 1.5em;
+  }
+  main .tech-container ul {
+    padding: 1rem 6rem 1rem 0.5rem;
+  }
+  main .tech-container ul li {
+    padding: 0;
+  }
+  main .tech-container ul li img {
+    width: 45% !important;
+  }
+}/*# sourceMappingURL=styles.css.map */
