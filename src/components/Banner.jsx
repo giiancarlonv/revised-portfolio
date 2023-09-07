@@ -6,10 +6,15 @@ import github from '../pictures/icons/github.png';
 const Banner = () => {
   return (
     <>
+      <div className='banner-design'>
+        <div className='firefly1'></div>
+        <div className='firefly2'></div>
+        <div className='firefly3'></div>
+        <div className='lamp'></div>
+      </div>
      <div className='hero-image'>
         <img src={heroImage} alt="image-hero" />
       </div>
-      
       <section className='section1'>
         <div className='name'>
           <h2>Gian Carlo Nava</h2>

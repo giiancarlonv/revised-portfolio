@@ -23,11 +23,30 @@ body{
   background: #e8e8e8;
   font-family: 'Quicksand';
 }
+@keyframes fromTop {
+  from{
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+}
+@keyframes fromLeft {
+  from{
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+}
+@keyframes fromRight {
+  from{
+    transform: translateX(200%);
+    opacity: 0;
+  }
+}
 header{
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   .header-design{
+    animation: fromTop .4s ease-in;
     width: 85%;
     height: 1rem;
     background: linear-gradient(-90deg, $blue 0%, $light 100%); 
@@ -45,12 +64,58 @@ header{
   }
 }
 main{
+  position: relative;
+  .banner-design{
+    position: absolute;
+    z-index: 2;
+    width: 19.5rem;
+    height: 11rem;
+    left: 2rem;
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 5px 3px #fce5b3;
+      }
+      70% {
+        transform: scale(.5);
+        box-shadow: 0 0 5px 3px #fce5b3;
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 5px 3px #fce5b3;
+      }
+    }
+    .firefly1, .firefly2, .firefly3{
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #ffffeb;
+      border-radius: 5px;      
+    }
+    .firefly1{
+      top: 4.1rem;
+      right: 1.2rem;
+      animation: pulse 4s ease-in-out infinite;
+    }
+    .firefly2{
+      top: 7.9rem;
+      right: .3rem;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    .firefly3{
+      top: 8.2rem;
+      right: 8.05rem;
+      animation: pulse 6s ease-in-out infinite;
+    }
+  }
   margin: 1rem 0;
   .hero-image{
+    animation: fromLeft 1s ease;
     margin: 0 2rem;
     background: $dark-blue;
     background: linear-gradient(90deg, $blue 0%, $light 100%); 
     img{
+      
       width: 100%;
     }
   }
@@ -58,12 +123,14 @@ main{
   .section1{
     margin: 0 2rem;
     display: grid;
+    animation: fromLeft 1s ease;
     ul{
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       margin: .5rem 0;
       li{
+        animation: fromLeft 1.5s ease;
         list-style: none;
         margin-left: 8%;
         img{
@@ -71,6 +138,7 @@ main{
           padding-right: .2rem;
         }
         a{
+          
           color: $dark-blue;
           text-decoration: none;
         }
@@ -111,6 +179,7 @@ main{
       justify-content: space-between;
       align-items: center;
       h1{
+        animation: fromLeft 1.5s ease;
         span{
           z-index: -1;
           background: $light;
@@ -123,14 +192,17 @@ main{
     }
     .project-image{
       margin: 1rem 2rem;
+      animation: fromRight 1.5s ease;
       img{
         width: 100%;
       }
       h4, p{
+        animation: fromRight 2s ease;
         margin: .5rem 0;
         color: $dark-blue;
       }
       .links{
+        
         margin-top: .5rem;
         display: flex;
         justify-content: space-between;
@@ -190,6 +262,32 @@ footer{
     }
   }
   main{
+    .banner-design{
+      left: 10rem;
+      width: 75%;
+      height: 18.5%;
+      .firefly1, .firefly2, .firefly3{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 20px;
+      }
+      .firefly1{
+        top: 12.5rem ;
+        right: 3.4rem;
+        animation: pulse 4s ease-in-out infinite;
+      }
+      .firefly2{
+        top: 24rem;
+        right: .6rem;
+        animation: pulse 2.5s ease-in-out infinite;
+      }
+      .firefly3{
+        top: 25rem;
+        right: 24.8rem;
+        animation: pulse 6s ease-in-out infinite;
+      }
+    }
+    
     .hero-image{
       margin: 0 10rem;
     }
@@ -284,6 +382,35 @@ footer{
             width: 45% !important;
           }
         }
+      }
+    }
+  }
+}
+@media (min-width: 1440px){
+  main{
+    .banner-design{
+      left: 10rem;
+      width: 77.5%;
+      height: 19.5%;
+      .firefly1, .firefly2, .firefly3{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 20px;
+      }
+      .firefly1{
+        top: 14.9rem ;
+        right: 4rem;
+        animation: pulse 4s ease-in-out infinite;
+      }
+      .firefly2{
+        top: 28.5rem;
+        right: .5rem;
+        animation: pulse 2.5s ease-in-out infinite;
+      }
+      .firefly3{
+        top: 29.4rem;
+        right: 28.5rem;
+        animation: pulse 6s ease-in-out infinite;
       }
     }
   }

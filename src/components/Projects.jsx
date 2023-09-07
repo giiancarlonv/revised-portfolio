@@ -9,7 +9,6 @@ const Projects = () => {
   )
 }
 const Project = () =>{
-
   return (
     <>
       {projects.map((project, index)  =>
@@ -17,7 +16,7 @@ const Project = () =>{
         <div className='text'>
           <h1><span>project</span> {project.id}</h1>
         </div>
-
+   
         <div className='project-image'>
           <img src={project.images[0]} alt="project-cover" />
           <h4>{project.title}</h4>
@@ -31,6 +30,11 @@ const Project = () =>{
       )}
     </>
   )
+}
+
+const ProjectImage =()=>{
+  projects.forEach(picture)
+
 }
 
 export default Projects
