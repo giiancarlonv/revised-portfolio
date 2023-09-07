@@ -22,7 +22,7 @@ const Banner = () => {
         </div>
         <div>
           <ul>
-            <li><img src={github} alt="github" /><a href="">github</a></li>
+            <li><img src={github} alt="github" /><a href="https://github.com/giiancarlonv">github</a></li>
             <li><img src={linkedin} alt="linkedin" /><a href="">linkedin</a></li>
             <li><img src={gmail} alt="gmail" /><a href="mailto:navagiancarlo32@gmail.com">gmail</a></li>
           </ul>
