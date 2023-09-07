@@ -28,7 +28,7 @@ header{
   flex-flow: column wrap;
   align-items: center;
   .header-design{
-    width: 80%;
+    width: 85%;
     height: 1rem;
     background: linear-gradient(-90deg, $blue 0%, $light 100%); 
     margin-bottom: 1rem;
@@ -49,7 +49,7 @@ main{
   .hero-image{
     margin: 0 2rem;
     background: $dark-blue;
-    background: linear-gradient(-90deg, $blue 0%, $light 100%); 
+    background: linear-gradient(90deg, $blue 0%, $light 100%); 
     img{
       width: 100%;
     }
@@ -80,7 +80,7 @@ main{
       text-align: center;
       padding: 1rem 2rem 3rem;
       background: $blue;
-      background: linear-gradient(-90deg, $blue 0%, $light 100%); 
+      background: linear-gradient(-300deg, $blue 0%, $light 100%); 
       color: #eaeaea;
       h2{
         font-family: 'Quicksand-Medium';
@@ -101,6 +101,7 @@ main{
       }
     aside{
       margin: 1rem 0;
+      color: $dark-blue;
     }
   }
   .projects-container{
@@ -135,7 +136,8 @@ main{
         justify-content: space-between;
         a{
           text-decoration: none;
-          color: $dark-blue;
+          color: black;
+          font-weight: 800;
         }
       }
     }
@@ -144,7 +146,6 @@ main{
     margin: 3rem 2rem;
     text-align: center;
     h1{
-      color: $dark-blue;
       font-size: 1em;
     }
     ul{
@@ -157,8 +158,16 @@ main{
         img{
           width: 60%;
         }
+        .react{
+          animation: react 2s linear infinite;
+        }
       }
     }
+  }
+}
+@keyframes react {
+  from{
+    transform: rotate(180deg);
   }
 }
 footer{
@@ -251,7 +260,7 @@ footer{
           font-size: 1.5em;
         }
         .links{
-          width: 20%;
+          width: 30%;
           a{
             font-size: 1.5em;
           }
