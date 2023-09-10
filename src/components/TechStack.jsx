@@ -5,6 +5,7 @@ import css from '../pictures/icons/css.webp';
 import html from '../pictures/icons/html.webp';
 import sass from '../pictures/icons/sass.webp';
 import adobe from '../pictures/icons/adobePS.webp';
+import illustrator from '../pictures/icons/illustrator.webp';
 const TechStack = () => {
   return (
     <section className='tech-container'>
@@ -16,6 +17,7 @@ const TechStack = () => {
         <li><img src={sass} alt="sass" /></li>
         <li><img src={html} alt="html" /></li>
         <li><img src={adobe} alt="adobe" /></li>
+        <li><img src={illustrator} alt="adobe" /></li>
       </ul>
     </section>
   )
