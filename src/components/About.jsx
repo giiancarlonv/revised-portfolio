@@ -5,8 +5,8 @@ const About = () => {
     <section className='section2'>
       <h1>About <span>me</span></h1>
       <aside>
-        <strong>Frontend developer and illustrator with a taste</strong> 
-        <p>I'm a front-end developer passionate about building accessible app that is user friendly and I love to work in groups where everyone can voice their opinions and ideas</p>
+        <strong>Frontend developer and digital artist with a taste</strong> 
+        <p>I'm a frontend developer, digital artist and wev designer passionate about building accessible website that is user friendly and I love to work in groups where everyone can voice their opinions and ideas</p>
       </aside>
     </section>
   )
