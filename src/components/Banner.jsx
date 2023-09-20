@@ -3,6 +3,7 @@ import heroImage from '../pictures/hero-image.webp'
 import gmail from '../pictures/icons/gmail.png';
 import linkedin from '../pictures/icons/linkedin.png';
 import github from '../pictures/icons/github.png';
+import behance from '../pictures/icons/behance.svg'
 const Banner = () => {
   return (
     <>
@@ -21,11 +22,14 @@ const Banner = () => {
           <span>frontend developer / illustrator</span>
         </div>
         <div>
-          <ul>
-            <li><img src={github} alt="github" /><a href="https://github.com/giiancarlonv">github</a></li>
-            <li><img src={linkedin} alt="linkedin" /><a href="">linkedin</a></li>
-            <li><img src={gmail} alt="gmail" /><a href="mailto:navagiancarlo32@gmail.com">gmail</a></li>
-          </ul>
+          <ul className='link mobile'>
+            <li><a href="https://github.com/giiancarlonv"><img src={github} alt="github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/giancarlo-nava-41314a193/"><img src={linkedin} alt="linkedin" /></a></li>
+            <li><a href="https://www.behance.net/giiancarlonv"><img src={behance} alt="gmail" /></a></li>
+            <li><a href="mailto:navagiancarlo32@gmail.com"><img src={gmail} alt="gmail" /></a></li>
+          </ul>  
+          
+          
         </div>
       </section>
     </>
